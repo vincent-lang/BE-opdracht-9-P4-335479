@@ -3,5 +3,5 @@
     <h1>Homepage</h1>
 </section>
 <section class="links">
-    <a href="#">Overzicht allergenen</a>
+    <a href="{{route('producten.index')}}">Overzicht geleverde producten</a>
 </section>
