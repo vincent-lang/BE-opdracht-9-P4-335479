@@ -105,7 +105,7 @@ section.table, section.title, section.contact {
     margin-left: 1rem;
 }
 
-section.title {
+section.title, section.extra-info {
     display: flex;
 }
 
@@ -135,13 +135,18 @@ section.links>a:hover {
     border: 0.1rem solid var(--lime);
 }
 
-section.title>section.form>form>select, input.submit {
+section.title>section.form>form>select, input.submit, input.date {
     margin-left: 0.5rem;
     padding: 0.5rem;
     border-color: var(--red);
     background-color: var(--black);
     color: var(--grey);
 }
+
+input.date::-webkit-calendar-picker-indicator {
+    filter: invert();
+}
+
 section.title>section.form>form>select:hover, section.title>section.form>form>select:focus, input.submit:hover {
     border-color: var(--lime);
     color: var(--white);
@@ -154,4 +159,13 @@ input.submit {
 a.symbols {
     text-decoration: none;
     color: var(--white);
+}
+
+section.extra-info {
+    margin-left: 0rem;
+}
+
+section.extra-info>h4 {
+    margin-left: 1rem;
+    font-size: 1.17em;
 }
